@@ -46,13 +46,23 @@ pip install matplotlib numpy
 
 The provided Makefile automates the compilation process. You can:
 
-- **Build the project** by running:
+- **Build both projects** by running:
 
   ```bash
   make
   ```
 
-  This will compile all necessary components.
+  This will compile all necessary components. On the other hand, type either:
+
+   ```bash
+  make test_parametric_minimal
+  ```
+
+   ```bash
+  make test_minimal_graph
+  ```
+
+  to compile the respective code.
 
 - **Clean the project** by removing compiled files and build artifacts:
 
@@ -64,9 +74,9 @@ The provided Makefile automates the compilation process. You can:
 
 ### Command-Line Execution
 
-You can generate minimal surface graphs using the command-line executable located at `./src/bin/test_minimal_graph`.
+You can generate minimal surface for boundary given as a graph or as a parametric function using the command-line executable located at `./src/bin`.
 
-**Usage:**
+**Usage (graph boundary):**
 
 ```bash
 ./src/bin/test_minimal_graph <domain> <N> <size1> <size2>
@@ -95,6 +105,22 @@ You can generate minimal surface graphs using the command-line executable locate
 
   ```bash
   ./src/bin/test_minimal_graph circle 50 1
+  ```
+
+**Usage (parametric boundary):**
+
+```bash
+./src/bin/test_parametric_minimal <N> 
+```
+
+- `<N>`:
+  - The number of subcircles in the domain.
+ 
+
+**Example:**
+
+  ```bash
+  ./src/bin/test_minimal_graph 30
   ```
 
 ### Python Plotting
