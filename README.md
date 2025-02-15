@@ -8,7 +8,6 @@ Minimal surfaces are fascinating structures with applications in mathematics, ph
 
 - **Compute and visualize minimal surfaces** using a dedicated command-line executable.
 - **Generate plots** of the minimal surface equation along with its corresponding graph.
-- **Visualize the parametric boundary** of the minimal surface.
 - **Automate build and cleanup processes** with a Makefile.
 
 ## Features
